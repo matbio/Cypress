@@ -1,0 +1,14 @@
+INSTRUÇÕES DE TRABALHO E COMANDOS PARA UM PROJETO EM CYPRESS
+
+- Para utilizar o cypress será necesário iniciar um projeto em node, comando: npm init
+- Com o projeto criado podemos iniciar a instalação do cypress, comando: 
+    - npm install cypress --save-dev
+    - npm install cypress@3.6.0 --save-dev [para uma versão especifica]
+-  Para abrir a tela de controle do cypress pode executar o comandos:
+    Obs: ele irá veriicar a abertura do cypress, abrir a tela de controle dele e dará a opção de gerar exemplos que você pode usar como documentação.
+    - .\node_modules\.bin\cypress open
+    ou
+    - npx cypress open
+
+OBSERVAÇÕES:
+    - Para fazer o vscode enetender que o seu arquivo rodará em cypress colocar a seguinte extrução na página:  /// <reference types="cypress"/>
