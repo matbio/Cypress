@@ -13,6 +13,8 @@ describe('Cypress básico', () => {
         cy.title()
             .should('equal', 'Campo de Treinamento')
             .and('contain', 'Campo')
+        //Exibir no console
+        cy.title().then(title => { console.log(title)})
 
     })
 
