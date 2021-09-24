@@ -66,15 +66,23 @@ describe('Cypress básico', () => {
 
     it('[TESTE COMBO SELECT]', () => {
         cy.get("#formEscolaridade").select('Superior').should('have.value', 'superior')
+        cy.get("#formEscolaridade option").should('have.length', 8)
+        cy.get("#formEscolaridade option").then($arr => {
+            const values = []
+            $arr.each( function () {
+                values.push(this.innerHTML)
+            })
+        })
+
     })
 
     it('[TESTE COMBO MÚLTIPLO SELECT]', () => {
         cy.get("#formEsportes").select(['nada','natacao'])
+        cy.get("#formEsportes").then($el => {
+            expect($el.val()).of.be.deep.equal(['natacao', 'nada'])
+            expect($el.val()).to.have.length(2)
+        })
+        cy.get("#formEsportes").invoke('val').should('eql', ['natacao', 'nada'])
     })
-
-
-
-    
-
 
 })
