@@ -10,6 +10,9 @@ INSTRUÇÕES DE TRABALHO E COMANDOS PARA UM PROJETO EM CYPRESS
     ou
     - npx cypress open
 
+ACESSO AOS PLUGINS DO CYPRESS
+- https://docs.cypress.io/plugins/directory
+
 OBSERVAÇÕES:
     - Para fazer o vscode enetender que o seu arquivo rodará em cypress colocar a seguinte extrução na página:  /// <reference types="cypress"/>
     - .debug() e .pause() são opções bem usadas para analise e depuração.
