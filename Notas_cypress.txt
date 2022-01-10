@@ -13,6 +13,9 @@ INSTRUÇÕES DE TRABALHO E COMANDOS PARA UM PROJETO EM CYPRESS
 ACESSO AOS PLUGINS DO CYPRESS
 - https://docs.cypress.io/plugins/directory
 
+PARA TRABALHA COM UPLOAD DE ARQUIVO
+- npm install --save-dev cypress-file-upload (Para trabalhar com upload de arquivos)
+
 OBSERVAÇÕES:
     - Para fazer o vscode enetender que o seu arquivo rodará em cypress colocar a seguinte extrução na página:  /// <reference types="cypress"/>
     - .debug() e .pause() são opções bem usadas para analise e depuração.
